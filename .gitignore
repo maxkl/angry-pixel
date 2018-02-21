@@ -1,0 +1,9 @@
+/Debug/
+/Release/
+/.launches/
+/.settings/
+/targetConfigs/
+/.ccsproject
+/.cproject
+/.project
+/tm4c123gh6pm.cmd

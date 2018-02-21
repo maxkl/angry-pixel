@@ -1,0 +1,10 @@
+
+static const int bitmap_cleared_width = 29;
+static const int bitmap_cleared_height = 5;
+static const uint8_t bitmap_cleared[] = {
+    0b01101000, 0b11100100, 0b11001110, 0b11001000,
+    0b10001000, 0b10001010, 0b10101000, 0b10101000,
+    0b10001000, 0b11001110, 0b11001100, 0b10101000,
+    0b10001000, 0b10001010, 0b10101000, 0b10100000,
+    0b01101110, 0b11101010, 0b10101110, 0b11001000
+};
