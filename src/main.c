@@ -305,17 +305,19 @@ static void update_physics() {
                         if (target_count <= 0) {
                             // The player has cleared the level if there are no more targets left
                             game_state = GAME_STATE_WON;
+
+                            return;
                         }
-                    } else {
-                        // Clear the grid cell
-                        grid_cell->type = GRID_CELL_EMPTY;
-
-                        // R.I.P.
-                        angry_pixel.alive = false;
-
-                        // Proceed with updating the world
-                        game_state = GAME_STATE_UPDATE_WORLD;
                     }
+
+                    // Clear the grid cell
+                    grid_cell->type = GRID_CELL_EMPTY;
+
+                    // R.I.P.
+                    angry_pixel.alive = false;
+
+                    // Proceed with updating the world
+                    game_state = GAME_STATE_UPDATE_WORLD;
 
                     // No need to do anything else here, the pixel is no more
                     return;
